@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header.jsx';
 import Sidebar from './Sidebar.jsx';
@@ -23,21 +23,7 @@ export default function Layout() {
       <Sidebar open={drawerOpen} onClose={() => setDrawerOpen(false)} />
       <main id="main" className="lg:pl-64">
         <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
-          <Suspense
-            fallback={
-              <div className="space-y-6" role="status" aria-label="Loading page">
-                <span className="sr-only">Loading page...</span>
-                <div className="skeleton h-8 w-48" />
-                <div className="skeleton h-4 max-w-xl" />
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="skeleton h-36" />
-                  <div className="skeleton h-36" />
-                </div>
-              </div>
-            }
-          >
-            <Outlet />
-          </Suspense>
+          <Outlet />
         </div>
       </main>
     </div>
