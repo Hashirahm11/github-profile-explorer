@@ -43,7 +43,7 @@ export default function Header({ onMenuClick }) {
           aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
           {theme === 'dark' ? <Sun className="h-5 w-5" aria-hidden="true" /> : <Moon className="h-5 w-5" aria-hidden="true" />}
         </button>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={iconButton} aria-label="Open GitHub in a new tab">
+        <a href="https://github.com/Hashirahm11/github-profile-explorer" target="_blank" rel="noopener noreferrer" className={iconButton} aria-label="View this project on GitHub">
           <Github className="h-5 w-5" aria-hidden="true" />
         </a>
       </div>

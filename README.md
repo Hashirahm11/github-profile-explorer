@@ -6,10 +6,10 @@ A responsive GitHub Profile Explorer built with React, Vite and Tailwind CSS. Se
 
 - Search any public username (button, Enter key or suggestion chips) with validation, loading skeletons and friendly errors
 - Profile page: avatar, name, bio, location, company, website, Twitter, counts, join date, copy-URL and favorite actions
-- Repository Explorer: search by name, filter by language, sort by updated / stars / forks / name
+- Repository Explorer: search by name, filter by language, include forks or archived projects, and sort by updated / stars / forks / name
 - Statistics: repositories, followers, following, stars and a language chart (calculated from fetched repos)
 - Favorites and recently viewed profiles saved in localStorage
-- Light and dark mode, responsive sidebar drawer, keyboard-friendly and accessible markup
+- Light and dark mode, responsive sidebar drawer, polished responsive dashboard, keyboard-friendly and accessible markup
 - Handles 404, rate limits, network failures and incomplete API responses
 
 ## Technologies used

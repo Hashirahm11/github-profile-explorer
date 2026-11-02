@@ -1,12 +1,14 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/layout/Layout.jsx';
-import Home from './pages/Home.jsx';
-import Explore from './pages/Explore.jsx';
-import Profile from './pages/Profile.jsx';
-import RepositoryExplorer from './pages/RepositoryExplorer.jsx';
-import Favorites from './pages/Favorites.jsx';
-import About from './pages/About.jsx';
-import NotFound from './pages/NotFound.jsx';
+
+const Home = lazy(() => import('./pages/Home.jsx'));
+const Explore = lazy(() => import('./pages/Explore.jsx'));
+const Profile = lazy(() => import('./pages/Profile.jsx'));
+const RepositoryExplorer = lazy(() => import('./pages/RepositoryExplorer.jsx'));
+const Favorites = lazy(() => import('./pages/Favorites.jsx'));
+const About = lazy(() => import('./pages/About.jsx'));
+const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 
 export default function App() {
   return (

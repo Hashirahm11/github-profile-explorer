@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { FolderGit2, Heart, Info, LayoutDashboard, Users, X } from 'lucide-react';
+import { ExternalLink, FolderGit2, Heart, Info, LayoutDashboard, Users, X } from 'lucide-react';
 import { useProfiles } from '../../context/FavoritesContext.jsx';
 
 const links = [
@@ -40,6 +40,15 @@ export default function Sidebar({ open, onClose }) {
             </NavLink>
           ))}
         </nav>
+        <div className="mt-8 border-t border-slate-200 pt-5 dark:border-slate-800">
+          <p className="px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">About</p>
+          <a href="https://github.com/Hashirahm11/github-profile-explorer" target="_blank" rel="noopener noreferrer"
+            className="mt-2 flex min-h-[42px] items-center gap-3 rounded-xl px-3 text-sm text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">
+            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            View source code
+          </a>
+          <p className="mt-4 px-3 text-xs leading-5 text-slate-400">A simple workspace for exploring public GitHub profiles.</p>
+        </div>
       </aside>
     </>
   );
