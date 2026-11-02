@@ -11,7 +11,7 @@ export default function RepoCard({ repo }) {
         <h3 className="min-w-0 break-words font-semibold">
           <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline dark:text-indigo-300">{repo.name}</a>
         </h3>
-        <span className="muted inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-200 px-2 py-0.5 text-xs capitalize dark:border-slate-700">
+        <span className="muted inline-flex shrink-0 items-center gap-1 text-xs capitalize">
           <VisIcon className="h-3 w-3" aria-hidden="true" />{visibility}
         </span>
       </div>

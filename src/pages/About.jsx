@@ -15,8 +15,8 @@ export default function About() {
       </section>
       <section className="card p-6">
         <h2 className="font-semibold">Technology</h2>
-        <ul className="mt-3 flex flex-wrap gap-2">
-          {stack.map((s) => <li key={s} className="rounded-full bg-indigo-50 px-3 py-1 text-sm text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300">{s}</li>)}
+        <ul className="muted mt-3 grid gap-2 text-sm sm:grid-cols-2">
+          {stack.map((s) => <li key={s}>{s}</li>)}
         </ul>
       </section>
       <section className="card space-y-3 p-6">

@@ -8,7 +8,6 @@ import {
   Heart,
   Search,
   ShieldCheck,
-  Sparkles,
   Users,
 } from 'lucide-react';
 import SearchForm from '../components/common/SearchForm.jsx';
@@ -47,21 +46,17 @@ export default function Home() {
 
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(260px,0.85fr)]">
           <div className="max-w-2xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-3 py-1.5 text-xs font-medium tracking-wide text-indigo-100">
-              <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-              A clearer view of GitHub
-            </div>
             <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.5rem]">
               Meet the people
               <br className="hidden sm:block" /> behind the <span className="hero-heading-accent">code.</span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-indigo-100/80 sm:text-lg">
-              Explore public profiles, find standout repositories, and understand a developer’s work—all in one focused workspace.
+              Explore public profiles, find standout repositories, and understand a developer’s work, all in one focused workspace.
             </p>
 
             <div className="mt-8 rounded-2xl border border-white/10 bg-slate-950/25 p-3 shadow-lg shadow-slate-950/10 backdrop-blur-sm sm:p-4">
               <SearchForm placeholder="Try a GitHub username" buttonLabel="Explore profile" />
-              <div className="mt-3 [&_span]:text-indigo-100/70 [&_a]:border-white/15 [&_a]:bg-white/[0.07] [&_a]:text-white [&_a:hover]:border-indigo-200/50 [&_a:hover]:bg-white/10 [&_a:hover]:text-white">
+              <div className="mt-3 [&_span]:text-indigo-100/70 [&_a]:text-indigo-100 [&_a:hover]:text-white">
                 <SuggestionChips />
               </div>
             </div>

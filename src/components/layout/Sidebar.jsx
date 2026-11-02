@@ -35,7 +35,7 @@ export default function Sidebar({ open, onClose }) {
               <Icon className="h-5 w-5" aria-hidden="true" />
               <span className="flex-1">{label}</span>
               {to === '/favorites' && favorites.length > 0 && (
-                <span className="rounded-full bg-indigo-600 px-2 py-0.5 text-xs text-white">{favorites.length}</span>
+                <span className="text-xs tabular-nums text-slate-400">{favorites.length}</span>
               )}
             </NavLink>
           ))}
